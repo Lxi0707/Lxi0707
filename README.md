@@ -15,8 +15,7 @@
   </picture>
 
   <!-- for beauty 留个空行好看点 -->
-  <div>&nbsp;</div>
-  
+  <div>&nbsp;</div> 
 <!-- 活跃贪吃蛇 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/buptsdz/buptsdz/output/github-contribution-grid-snake-dark.svg">
