@@ -71,9 +71,10 @@ href="https://t.me/LxiCollectionhallChat" target="_blank"><img src="https://img.
   <img alt="github" src="https://i.giphy.com/media/KzJkzjggfGN5Py6nkT/200.webp" width="100" title="github">
 </div>
 
-<!-- profile-3d-contrib 3D 贡献图-->
+<!-- profile-3d-contrib 3D 贡献图 -->
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/buptsdz/Lxi0707/profile-3d-contrib/profile-gitblock.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/buptsdz/Lxi0707/profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-gitblock.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" />
 </picture>
 
