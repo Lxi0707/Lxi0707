@@ -77,4 +77,3 @@ href="https://t.me/LxiCollectionhallChat" target="_blank"><img src="https://img.
   <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-gitblock.svg" />
   <img src="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" />
 </picture>
-
