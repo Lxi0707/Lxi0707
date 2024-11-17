@@ -1,14 +1,14 @@
 name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule: # 03:00 JST == 18:00 UTC
+  schedule: # 每天 UTC 时间 18:00 自动运行
     - cron: "0 18 * * *"
-  workflow_dispatch:
+  workflow_dispatch: # 手动触发支持
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: Generate GitHub Profile 3D Contrib
     steps:
       - uses: actions/checkout@v3
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
@@ -20,5 +20,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          git commit -m "generated"
+          git commit -m "Generated 3D contribution graph"
           git push
