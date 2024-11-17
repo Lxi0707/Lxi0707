@@ -18,8 +18,8 @@
   <div>&nbsp;</div> 
    <!-- profile logo 个人资料徽标 -->
   <div>
-    <a href="[http://sue.sparkflare.cn](https://t.me/LXi_Collection_hall)" target="_blank"><img src="https://img.shields.io/badge/Telegram-TG频道-rgb(170, 220, 245)" /></a>&emsp;
-    <a href="[https://www.yuque.com/u39067637](https://t.me/LxiCollectionhallChat)" target="_blank"><img src="https://img.shields.io/badge/Yuque-语雀-rgb(49, 204, 121)" /></a>&emsp;
+    <a href="[https://t.me/LXi_Collection_hall]" target="_blank"><img src="https://img.shields.io/badge/Telegram-TG频道-rgb(170, 220, 245)" /></a>&emsp;
+    <a href="[https://t.me/LxiCollectionhallChat]" target="_blank"><img src="https://img.shields.io/badge/Yuque-语雀-rgb(49, 204, 121)" /></a>&emsp;
     <a href="https://space.bilibili.com/512181208?spm_id_from=333.1007.0.0" target="_blank"><img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" /></a>&emsp;
     <a href="http://sue.sparkflare.cn/mulu/mulu1.html" target="_blank"><img src="https://img.shields.io/badge/Poems-我写的诗-rgb(225, 224, 199)" /></a>&emsp;
     <a href="http://www.sparkflare.cn" target="_blank"><img src="https://img.shields.io/badge/Sparkflare-星火-rgb(227, 52, 43)" /></a>&emsp;
