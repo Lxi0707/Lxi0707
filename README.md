@@ -32,6 +32,12 @@ href="https://t.me/LxiCollectionhallChat" target="_blank"><img src="https://img.
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/buptsdz/buptsdz/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/buptsdz/buptsdz/output/github-contribution-grid-snake.svg">
   </picture>
+<!-- 活跃折线图 -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Lxi0707&theme=xcode&bg_color=FF000000&hide_border=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Lxi0707&theme=xcode&bg_color=FF000000&color=000000&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Lxi0707&theme=xcode&bg_color=FF000000&hide_border=true" alt="活跃折线图" />
+</picture>
 
 
 ### 🧰 Tools:
