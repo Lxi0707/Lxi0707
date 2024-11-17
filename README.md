@@ -15,9 +15,3 @@
     </picture>
     <img align="right" width="150"  src="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/assets/images/right.png" />
     <div>&nbsp;</div>
-    <!-- metrics -->
-    <img width="150" src="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/assets/images/cxyduck.gif"/>
-    <img src="/github-metrics.svg">
-    <img width="150" src="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/assets/images/cxyduck.gif">
-</div>
-
