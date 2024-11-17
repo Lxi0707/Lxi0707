@@ -50,7 +50,3 @@
   <img src="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/profile-3d-contrib/profile-night-rainbow.svg" />
 </picture>
 
-
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/assets/images/icon.png" />
-</div>
