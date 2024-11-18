@@ -1,11 +1,8 @@
-<div align="center">
-
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center;">
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
-  <a href="https://t.me/LXi_Collection_hall" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+Lxi,+welcome+here!&center=true&size=27" alt="Typing SVG">
-  </a>
-</div>
+    <a href="https://t.me/LXi_Collection_hall" target="_blank">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+Lxi,+welcome+here!&center=true&size=27" alt="Typing SVG">
     </a>
   </div>
 
@@ -15,7 +12,7 @@
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/assets/images/developer.svg" height="225px" />
     <img src="https://cdn.jsdelivr.net/gh/buptsdz/buptsdz/assets/images/coding.gif" />
   </picture>
-
+</div>
   <!-- for beauty 留个空行好看点 -->
   <div>&nbsp;</div> 
    <!-- profile logo 个人资料徽标 -->
