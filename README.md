@@ -1,4 +1,4 @@
-欢迎来到我的 GitHub 仓库！
+##  欢迎来到我的 GitHub 仓库！
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center;">
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
@@ -18,7 +18,7 @@
   <div>&nbsp;</div> 
    <!-- profile logo 个人资料徽标 -->
    
-## 我的脚本仓库
+##  我的脚本仓库
 
 仓库链接：[点击查看](https://github.com/Lxi0707/Scripts)
    
@@ -26,7 +26,7 @@
    
 JD获取脚本请查看X分支，支持quantumultx loon surge食用
 
-请注意：
+
 脚本声明:
  1. 本脚本仅用于学习研究，禁止用于商业用途。
  2. 本脚本不保证准确性、可靠性、完整性和及时性。
