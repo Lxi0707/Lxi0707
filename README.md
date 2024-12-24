@@ -1,3 +1,4 @@
+欢迎来到我的 GitHub 仓库！
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center;">
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
