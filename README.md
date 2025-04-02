@@ -17,7 +17,7 @@
 
 仓库链接：[点击查看](https://github.com/Lxi0707/Scripts)
    
-最后更新时间：2024.12.24
+最后更新时间：2025.4.3
    
 JD获取脚本请查看X分支，支持quantumultx loon surge食用
 
