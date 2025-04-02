@@ -40,6 +40,7 @@ JD获取脚本请查看X分支，支持quantumultx loon surge食用
 
 
 # index1.txt 预览：
+（txt自行改html文件格式,1不要）
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Lxi0707/Lxi0707/blob/main/index1.jpg">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Lxi0707/Lxi0707/blob/main/index1.jpg">
