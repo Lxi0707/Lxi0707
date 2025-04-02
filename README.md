@@ -6,8 +6,6 @@
       <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+Lxi,+welcome+here!&center=true&size=27" alt="Typing SVG">
     </a>
   </div>
-
-
 </div>
   <!-- for beauty 留个空行好看点 -->
   <div>&nbsp;</div> 
@@ -17,10 +15,11 @@
 
 仓库链接：[点击查看](https://github.com/Lxi0707/Scripts)
    
-最后更新时间：2025.4.3
+👇最后更新时间：2024.12.24
    
 JD获取脚本请查看X分支，支持quantumultx loon surge食用
 
+注意❗❗❗
 
 脚本声明:
  1. 本脚本仅用于学习研究，禁止用于商业用途。
@@ -31,7 +30,7 @@ JD获取脚本请查看X分支，支持quantumultx loon surge食用
  6. 请勿将本脚本用于商业用途，后果自负。
  7. 本脚本版权归作者所有。
 
-
+👇最后更新时间：2025.4.3
 # index.html 预览：
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Lxi0707/Lxi0707/blob/main/index.png">
