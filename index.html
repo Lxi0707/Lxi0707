@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>滑稽</title>
+    <title>欢迎来到 k.kkk.hidns.vip</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: black;
+            overflow: hidden;
+            background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1e3c72, #2a5298);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+            text-align: center;
         }
-        img {
-            width: 300px;
-            animation: huaji 0.5s infinite alternate ease-in-out;
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        @keyframes huaji {
-            0% { transform: rotate(-10deg); }
-            100% { transform: rotate(10deg); }
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            opacity: 0.8;
+            animation: blink 1.5s infinite alternate;
+        }
+        @keyframes blink {
+            0% { opacity: 0.3; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <img src="https://i.imgtg.com/2023/06/30/VHXMf.jpg" alt="滑稽">
+    <div>
+        <h1>欢迎来到 k.kkk.hidns.vip</h1>
+        <p>🚀 即将上线，敬请期待... 🚀</p>
+    </div>
 </body>
 </html>
