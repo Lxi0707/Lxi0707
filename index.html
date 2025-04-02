@@ -10,8 +10,6 @@
             padding: 0;
             font-family: Arial, sans-serif;
             text-align: center;
-            /* 使用 dmoe.cc API 作为背景图 */
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4), url('https://www.dmoe.cc/random.php');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -52,10 +50,24 @@
 </head>
 <body>
     <h1>欢迎来到 k.kkk.hidns.vip</h1>
-    <p>这是一个简洁而酷炫的个人主页</p>
+    <p>这是来自L҉X҉i҉的个人主页</p>
     <div class="nav">
         <a href="https://github.com/Lxi0707/Lxi0707" target="_blank">关于</a>
         <a href="https://t.me/LXi_Collection_hall" target="_blank">联系</a>
     </div>
+
+    <script>
+        // 检测用户设备类型（手机端或电脑端）
+        var isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+
+        // 根据设备类型设置背景图片
+        if (isMobile) {
+            // 手机端使用 https://api.maho.cc/random-img/pc.php
+            document.body.style.backgroundImage = "url('https://api.maho.cc/random-img/pc.php')";
+        } else {
+            // 电脑端使用 https://www.dmoe.cc/random.php
+            document.body.style.backgroundImage = "url('https://www.dmoe.cc/random.php')";
+        }
+    </script>
 </body>
 </html>
