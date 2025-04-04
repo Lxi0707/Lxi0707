@@ -130,12 +130,12 @@
 
         function toggleContent(trigger) {
             var content = trigger.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                trigger.textContent = trigger.textContent.replace("点击收起", "点击展开");
-            } else {
-                content.style.display = "block";
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block"; // 展开内容
                 trigger.textContent = trigger.textContent.replace("点击展开", "点击收起");
+            } else {
+                content.style.display = "none"; // 收起内容
+                trigger.textContent = trigger.textContent.replace("点击收起", "点击展开");
             }
         }
 
