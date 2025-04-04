@@ -18,7 +18,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            position: relative; /* 用于头像定位 */
+            position: relative;
             transition: background-image 0.5s ease-in-out;
             background-color: #282828; /* 背景颜色备用 */
         }
@@ -88,6 +88,7 @@
     <h1>欢迎来到kkk.hidns.vip</h1>
     <p>这是来自L҉X҉i҉的个人主页</p>
 
+    <!-- 展开内容功能 -->
     <div class="expandable" onclick="toggleContent(this)">关于我</div>
     <div class="expandable-content">
         <p>这是我的个人主页，欢迎访问我的<a href="https://github.com/Lxi0707/Lxi0707" target="_blank">GitHub</a>了解更多关于我的信息。</p>
@@ -98,7 +99,35 @@
         <p>如果你想与我联系，可以通过<a href="https://t.me/LXi_Collection_hall" target="_blank">Telegram</a>联系我。</p>
     </div>
 
+    <!-- 看板娘部分 -->
+    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
     <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            window.L2Dwidget.init({
+                pluginRootPath: 'https://cdn.jsdelivr.net/npm/live2d-widget-model@1.0.5/',
+                pluginJsPath: 'lib/',
+                pluginModelPath: 'assets/',
+                model: {
+                    jsonPath: 'https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json'
+                },
+                display: {
+                    position: 'right',
+                    width: 150,
+                    height: 300,
+                    hOffset: 0,
+                    vOffset: 0
+                },
+                dialog: {
+                    enable: true,
+                    script: {
+                        'tap body': '你好呀！这里是，ai智能小助手！！！',
+                        'hover .app': '嘿！需要帮助吗？',
+                        'tap face': '汪汪'
+                    }
+                }
+            });
+        });
+
         function toggleContent(trigger) {
             var content = trigger.nextElementSibling;
             if (content.style.display === "block") {
