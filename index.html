@@ -25,16 +25,26 @@
             color: #fff;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
             animation: fade-in 2s;
+            background-color: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 10px;
         }
         p {
             font-size: 1.4rem;
             color: #fff;
             opacity: 0.8;
             animation: fade-in 2s;
+            background-color: rgba(0,0,0,0.2);
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
         .expandable {
             margin-top: 20px;
             cursor: pointer;
+            background-color: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 10px;
         }
         .expandable-content {
             display: none;
@@ -50,6 +60,13 @@
         .expandable-content a:hover {
             color: #ccc;
         }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px;
+            border: 2px solid #fff;
+        }
         @keyframes fade-in {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -58,6 +75,7 @@
 </head>
 <body>
     <h1>欢迎来到kkk.hidns.vip</h1>
+    <img class="avatar" src="https://img.7777.ip-ddns.com/api/rfile/photo_2024-01-10_17-36-56.jpg" alt="我的头像">
     <p>这是来自L҉X҉i҉的个人主页</p>
 
     <div class="expandable" onclick="toggleContent(this)">关于我</div>
@@ -70,12 +88,32 @@
         <p>如果你想与我联系，可以通过<a href="https://t.me/LXi_Collection_hall" target="_blank">Telegram</a>联系我。</p>
     </div>
 
-    <div class="expandable" onclick="toggleContent(this)">其他信息</div>
-    <div class="expandable-content">
-        <p>这里可以添加其他相关信息，如项目介绍、技能列表等。</p>
-    </div>
-
+    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
     <script>
+        window.L2Dwidget.init({
+          pluginRootPath: 'https://cdn.jsdelivr.net/npm/live2d-widget-model@1.0.5/',
+          pluginJsPath: 'lib/',
+          pluginModelPath: 'assets/',
+          model: {
+            jsonPath: 'https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json'
+          },
+          display: {
+            position: 'right',
+            width: 150,
+            height: 300,
+            hOffset: 0,
+            vOffset: 0
+          },
+          dialog: {
+            enable: true,
+            script: {
+              'tap body': '你好呀！这里是，ai智能小助手！！！',
+              'hover .app': '嘿！需要帮助吗？',
+              'tap face': '汪汪'
+            }
+          }
+        });
+
         function toggleContent(trigger) {
             var content = trigger.nextElementSibling;
             if (content.style.display === "block") {
