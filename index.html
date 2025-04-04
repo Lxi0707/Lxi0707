@@ -49,6 +49,7 @@
             cursor: pointer;
             font-size: 1.2rem;
             color: #fff;
+            z-index: 10; /* 确保按钮位于最上层 */
         }
         .expandable-content {
             display: none;
@@ -89,13 +90,13 @@
     <p>这是来自L҉X҉i҉的个人主页</p>
 
     <!-- 展开内容功能 -->
-    <div class="expandable" onclick="toggleContent(this)">关于我</div>
-    <div class="expandable-content">
+    <div class="expandable" onclick="toggleContent('about')">关于我</div>
+    <div class="expandable-content" id="about">
         <p>这是我的个人主页，欢迎访问我的<a href="https://github.com/Lxi0707/Lxi0707" target="_blank">GitHub</a>了解更多关于我的信息。</p>
     </div>
 
-    <div class="expandable" onclick="toggleContent(this)">联系方式</div>
-    <div class="expandable-content">
+    <div class="expandable" onclick="toggleContent('contact')">联系方式</div>
+    <div class="expandable-content" id="contact">
         <p>如果你想与我联系，可以通过<a href="https://t.me/LXi_Collection_hall" target="_blank">Telegram</a>联系我。</p>
     </div>
 
@@ -128,8 +129,9 @@
             });
         });
 
-        function toggleContent(trigger) {
-            var content = trigger.nextElementSibling;
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var trigger = content.previousElementSibling;
             if (content.style.display === "none" || content.style.display === "") {
                 content.style.display = "block"; // 展开内容
                 trigger.textContent = trigger.textContent.replace("点击展开", "点击收起");
