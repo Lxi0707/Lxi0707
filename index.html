@@ -62,6 +62,13 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+        .expandable-content a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .expandable-content a:hover {
+            color: #ccc;
+        }
         @keyframes fade-in {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -71,14 +78,13 @@
 <body>
     <h1>欢迎来到kkk.hidns.vip</h1>
     <p>这是来自L҉X҉i҉的个人主页</p>
-    <div class="nav">
-        <a href="https://github.com/Lxi0707/Lxi0707" target="_blank">关于</a>
-        <a href="https://t.me/LXi_Collection_hall" target="_blank">联系</a>
-    </div>
 
     <div class="expandable" onclick="toggleContent(this)">点击展开更多信息</div>
     <div class="expandable-content">
-        这里是更多的信息内容。你可以在这里添加任何你想展示的信息。
+        <h2>关于</h2>
+        <p>这是我的个人主页，欢迎访问我的<a href="https://github.com/Lxi0707/Lxi0707" target="_blank">GitHub</a>了解更多关于我的信息。</p>
+        <h2>联系</h2>
+        <p>如果你想与我联系，可以通过<a href="https://t.me/LXi_Collection_hall" target="_blank">Telegram</a>联系我。</p>
     </div>
 
     <script>
