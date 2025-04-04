@@ -51,6 +51,17 @@
             color: #fff;
             transform: scale(1.05);
         }
+        .expandable {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .expandable-content {
+            display: none;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            margin-top: 10px;
+        }
         @keyframes fade-in {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -65,7 +76,23 @@
         <a href="https://t.me/LXi_Collection_hall" target="_blank">联系</a>
     </div>
 
+    <div class="expandable" onclick="toggleContent(this)">点击展开更多信息</div>
+    <div class="expandable-content">
+        这里是更多的信息内容。你可以在这里添加任何你想展示的信息。
+    </div>
+
     <script>
+        function toggleContent(trigger) {
+            var content = trigger.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                trigger.textContent = "点击展开更多信息";
+            } else {
+                content.style.display = "block";
+                trigger.textContent = "点击收起";
+            }
+        }
+
         // 检测用户设备类型（手机端或电脑端）
         var isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
 
