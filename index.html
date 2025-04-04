@@ -72,28 +72,30 @@
 
     <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
     <script>
-        window.L2Dwidget.init({
-          pluginRootPath: 'https://cdn.jsdelivr.net/npm/live2d-widget-model@1.0.5/',
-          pluginJsPath: 'lib/',
-          pluginModelPath: 'assets/',
-          model: {
-            jsonPath: 'https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json'
-          },
-          display: {
-            position: 'right',
-            width: 150,
-            height: 300,
-            hOffset: 0,
-            vOffset: 0
-          },
-          dialog: {
-            enable: true,
-            script: {
-              'tap body': '你好呀！这里是，ai智能小助手！！！',
-              'hover .app': '嘿！需要帮助吗？',
-              'tap face': '汪汪'
-            }
-          }
+        window.addEventListener("DOMContentLoaded", function() {
+            window.L2Dwidget.init({
+                pluginRootPath: 'https://cdn.jsdelivr.net/npm/live2d-widget-model@1.0.5/',
+                pluginJsPath: 'lib/',
+                pluginModelPath: 'assets/',
+                model: {
+                    jsonPath: 'https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json'
+                },
+                display: {
+                    position: 'right',
+                    width: 150,
+                    height: 300,
+                    hOffset: 0,
+                    vOffset: 0
+                },
+                dialog: {
+                    enable: true,
+                    script: {
+                        'tap body': '你好呀！这里是，ai智能小助手！！！',
+                        'hover .app': '嘿！需要帮助吗？',
+                        'tap face': '汪汪'
+                    }
+                }
+            });
         });
 
         function toggleContent(trigger) {
