@@ -12,74 +12,112 @@
             text-align: center;
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: background-image 0.5s ease-in-out;
         }
         h1 {
             font-size: 3.5rem;
             color: #fff;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
             animation: fade-in 2s;
-            background-color: rgba(0,0,0,0.5);
-            padding: 10px;
-            border-radius: 10px;
         }
         p {
             font-size: 1.4rem;
             color: #fff;
             opacity: 0.8;
             animation: fade-in 2s;
-            background-color: rgba(0,0,0,0.5);
-            padding: 5px;
-            border-radius: 5px;
         }
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+        .expandable {
             margin-top: 20px;
+            cursor: pointer;
+        }
+        .expandable-content {
+            display: none;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .expandable-content a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .expandable-content a:hover {
+            color: #ccc;
+        }
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <h1>欢迎来到kkk.hidns.vip</h1>
-    <img class="avatar" src="https://img.7777.ip-ddns.com/api/rfile/photo_2024-01-10_17-36-56.jpg" alt="我的头像">
     <p>这是来自L҉X҉i҉的个人主页</p>
 
-    <!-- 看板娘脚本 -->
+    <div class="expandable" onclick="toggleContent(this)">关于我</div>
+    <div class="expandable-content">
+        <p>这是我的个人主页，欢迎访问我的<a href="https://github.com/Lxi0707/Lxi0707" target="_blank">GitHub</a>了解更多关于我的信息。</p>
+    </div>
+
+    <div class="expandable" onclick="toggleContent(this)">联系方式</div>
+    <div class="expandable-content">
+        <p>如果你想与我联系，可以通过<a href="https://t.me/LXi_Collection_hall" target="_blank">Telegram</a>联系我。</p>
+    </div>
+
     <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
     <script>
-        // 初始化看板娘
         window.L2Dwidget.init({
           pluginRootPath: 'https://cdn.jsdelivr.net/npm/live2d-widget-model@1.0.5/',
           pluginJsPath: 'lib/',
           pluginModelPath: 'assets/',
           model: {
-              jsonPath: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api@master/model/haru/01/haru01.model.json' // 替换为有效模型路径
+            jsonPath: 'https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json'
           },
           display: {
-              position: 'right',
-              width: 150,
-              height: 300,
-              hOffset: 0,
-              vOffset: -50
+            position: 'right',
+            width: 150,
+            height: 300,
+            hOffset: 0,
+            vOffset: 0
           },
           dialog: {
-              enable: true,
-              script: {
-                  'tap body': '你好呀！欢迎来到我的主页！',
-                  'hover .app': '需要帮助吗？',
-                  'tap face': '嘿嘿！'
-              }
+            enable: true,
+            script: {
+              'tap body': '你好呀！这里是，ai智能小助手！！！',
+              'hover .app': '嘿！需要帮助吗？',
+              'tap face': '汪汪'
+            }
           }
         });
 
-        // 设置背景图片逻辑
-        var isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
-        var backgroundUrl = isMobile
-            ? 'https://api.maho.cc/random-img/pc.php'
-            : 'https://www.dmoe.cc/random.php';
+        function toggleContent(trigger) {
+            var content = trigger.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                trigger.textContent = trigger.textContent.replace("点击收起", "点击展开");
+            } else {
+                content.style.display = "block";
+                trigger.textContent = trigger.textContent.replace("点击展开", "点击收起");
+            }
+        }
 
-        document.body.style.backgroundImage = `url('${backgroundUrl}')`;
+        // 检测用户设备类型（手机端或电脑端）
+        var isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+
+        // 根据设备类型设置背景图片
+        if (isMobile) {
+            // 手机端使用 https://api.maho.cc/random-img/pc.php
+            document.body.style.backgroundImage = "url('https://api.maho.cc/random-img/pc.php')";
+        } else {
+            // 电脑端使用 https://www.dmoe.cc/random.php
+            document.body.style.backgroundImage = "url('https://www.dmoe.cc/random.php')";
+        }
     </script>
 </body>
 </html>
