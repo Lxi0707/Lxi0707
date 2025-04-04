@@ -32,25 +32,6 @@
             opacity: 0.8;
             animation: fade-in 2s;
         }
-        .nav {
-            margin-top: 30px;
-        }
-        .nav a {
-            text-decoration: none;
-            background: #fff;
-            color: #333;
-            padding: 12px 25px;
-            border-radius: 7px;
-            margin: 5px;
-            display: inline-block;
-            transition: 0.3s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .nav a:hover {
-            background: #333;
-            color: #fff;
-            transform: scale(1.05);
-        }
         .expandable {
             margin-top: 20px;
             cursor: pointer;
@@ -79,12 +60,19 @@
     <h1>欢迎来到kkk.hidns.vip</h1>
     <p>这是来自L҉X҉i҉的个人主页</p>
 
-    <div class="expandable" onclick="toggleContent(this)">点击展开更多信息</div>
+    <div class="expandable" onclick="toggleContent(this)">关于我</div>
     <div class="expandable-content">
-        <h2>关于</h2>
         <p>这是我的个人主页，欢迎访问我的<a href="https://github.com/Lxi0707/Lxi0707" target="_blank">GitHub</a>了解更多关于我的信息。</p>
-        <h2>联系</h2>
+    </div>
+
+    <div class="expandable" onclick="toggleContent(this)">联系方式</div>
+    <div class="expandable-content">
         <p>如果你想与我联系，可以通过<a href="https://t.me/LXi_Collection_hall" target="_blank">Telegram</a>联系我。</p>
+    </div>
+
+    <div class="expandable" onclick="toggleContent(this)">其他信息</div>
+    <div class="expandable-content">
+        <p>这里可以添加其他相关信息，如项目介绍、技能列表等。</p>
     </div>
 
     <script>
@@ -92,10 +80,10 @@
             var content = trigger.nextElementSibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
-                trigger.textContent = "点击展开更多信息";
+                trigger.textContent = trigger.textContent.replace("点击收起", "点击展开");
             } else {
                 content.style.display = "block";
-                trigger.textContent = "点击收起";
+                trigger.textContent = trigger.textContent.replace("点击展开", "点击收起");
             }
         }
 
