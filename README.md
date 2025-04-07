@@ -47,6 +47,13 @@ JD获取脚本请查看X分支，支持quantumultx loon surge食用
   <img alt="自定义图片" src="https://github.com/Lxi0707/Lxi0707/blob/main/index1.jpg">
 </picture>
 
+# index2.txt 预览：
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Lxi0707/Lxi0707/blob/main/index2.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Lxi0707/Lxi0707/blob/main/index2.png">
+  <img alt="自定义图片" src="https://github.com/Lxi0707/Lxi0707/blob/main/index2.png">
+</picture>
 
 
 
