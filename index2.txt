@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+
+    canvas {
+      background: #111;
+      border: 2px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      background-color: #fff;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #eee;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Site</h1>
+  <p>A classic Snake Game is waiting for you below. Use arrow keys to play!</p>
+
+  <canvas id="game" width="400" height="400"></canvas>
+  <button class="button" onclick="startGame()">Start Game</button>
+
+  <footer>
+    &copy; 2025 Built with curiosity and code.
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('game');
+    const ctx = canvas.getContext('2d');
+
+    const gridSize = 20;
+    let snake = [];
+    let direction = 'right';
+    let food = {};
+    let gameInterval;
+
+    function resetGame() {
+      snake = [{ x: 5, y: 5 }];
+      direction = 'right';
+      placeFood();
+    }
+
+    function placeFood() {
+      food = {
+        x: Math.floor(Math.random() * (canvas.width / gridSize)),
+        y: Math.floor(Math.random() * (canvas.height / gridSize)),
+      };
+    }
+
+    function drawCell(x, y, color) {
+      ctx.fillStyle = color;
+      ctx.fillRect(x * gridSize, y * gridSize, gridSize - 1, gridSize - 1);
+    }
+
+    function updateGame() {
+      const head = { ...snake[0] };
+
+      if (direction === 'up') head.y--;
+      if (direction === 'down') head.y++;
+      if (direction === 'left') head.x--;
+      if (direction === 'right') head.x++;
+
+      // Game over conditions
+      if (
+        head.x < 0 || head.x >= canvas.width / gridSize ||
+        head.y < 0 || head.y >= canvas.height / gridSize ||
+        snake.some(seg => seg.x === head.x && seg.y === head.y)
+      ) {
+        clearInterval(gameInterval);
+        alert('Game Over! Press Start to try again.');
+        return;
+      }
+
+      snake.unshift(head);
+
+      if (head.x === food.x && head.y === food.y) {
+        placeFood();
+      } else {
+        snake.pop();
+      }
+
+      // Clear and redraw
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawCell(food.x, food.y, 'red');
+      snake.forEach((seg, i) => drawCell(seg.x, seg.y, i === 0 ? '#0f0' : '#fff'));
+    }
+
+    function startGame() {
+      resetGame();
+      clearInterval(gameInterval);
+      gameInterval = setInterval(updateGame, 100);
+    }
+
+    window.addEventListener('keydown', e => {
+      const key = e.key;
+      if (key === 'ArrowUp' && direction !== 'down') direction = 'up';
+      if (key === 'ArrowDown' && direction !== 'up') direction = 'down';
+      if (key === 'ArrowLeft' && direction !== 'right') direction = 'left';
+      if (key === 'ArrowRight' && direction !== 'left') direction = 'right';
+    });
+  </script>
+</body>
+</html>
