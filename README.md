@@ -2,7 +2,7 @@
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center;">
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
-    <a href="https://t.me/LXi_Collection_hall" target="_blank">
+    <a href="https://t.me/lxxlli1" target="_blank">
       <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+Lxi,+welcome+here!&center=true&size=27" alt="Typing SVG">
     </a>
   </div>
@@ -70,7 +70,7 @@ JD获取脚本请查看X分支，支持quantumultx loon surge食用
 下面是我的TG频道和群组
 
   <div>
-    <a href="https://t.me/LXi_Collection_hall" target="_blank"><img src="https://img.shields.io/badge/Telegram-频道-rgb(170, 220, 245)" /></a>&emsp;
+    <a href="https://t.me/lxxlli1" target="_blank"><img src="https://img.shields.io/badge/Telegram-频道-rgb(170, 220, 245)" /></a>&emsp;
     <a 
 href="https://t.me/LxiCollectionhallChat" target="_blank"><img src="https://img.shields.io/badge/Telegram-群组-rgb(49, 204, 121)" /></a>&emsp;
     <!-- visitor -->
