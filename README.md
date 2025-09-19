@@ -70,9 +70,9 @@ JD获取脚本请查看X分支，支持quantumultx loon surge食用
 下面是我的TG频道和群组
 
   <div>
-    <a href="https://t.me/lxxlli1" target="_blank"><img src="https://img.shields.io/badge/Telegram-频道-rgb(170, 220, 245)" /></a>&emsp;
+    <a href="https://t.me/jijiijjji" target="_blank"><img src="https://img.shields.io/badge/Telegram-频道-rgb(170, 220, 245)" /></a>&emsp;
     <a 
-href="https://t.me/LxiCollectionhallChat" target="_blank"><img src="https://img.shields.io/badge/Telegram-群组-rgb(49, 204, 121)" /></a>&emsp;
+href="https://t.me/jijijiijj" target="_blank"><img src="https://img.shields.io/badge/Telegram-群组-rgb(49, 204, 121)" /></a>&emsp;
     <!-- visitor -->
     <img src="https://komarev.com/ghpvc/?username=Lxi0707&label=Views&color=0e75b6&style=flat" alt="访问量统计" />&emsp;
     <!-- wakatime -->
