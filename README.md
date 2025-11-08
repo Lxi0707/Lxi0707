@@ -3,7 +3,7 @@
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
     <a href="https://t.me/lxxlli1" target="_blank">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+Lxi,+welcome+here!&center=true&size=27" alt="Typing SVG">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+sxxsoo,+welcome+here!&center=true&size=27" alt="Typing SVG">
     </a>
   </div>
 </div>
