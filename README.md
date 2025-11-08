@@ -86,9 +86,9 @@ href="https://t.me/jijijiijj" target="_blank"><img src="https://img.shields.io/b
   </picture>
 <!-- 活跃折线图 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Lxi0707&theme=xcode&bg_color=FF000000&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Lxi0707&theme=xcode&bg_color=FF000000&color=000000&hide_border=true" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Lxi0707&theme=xcode&bg_color=FF000000&hide_border=true" alt="活跃折线图" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sxxsoo&theme=xcode&bg_color=FF000000&hide_border=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sxxsoo&theme=xcode&bg_color=FF000000&color=000000&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sxxsoo&theme=xcode&bg_color=FF000000&hide_border=true" alt="活跃折线图" />
 </picture>
 
 
