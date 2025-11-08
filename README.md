@@ -125,6 +125,6 @@ href="https://t.me/jijijiijj" target="_blank"><img src="https://img.shields.io/b
 
 <!-- profile-3d-contrib 3D 贡献图 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-night-rainbow.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/Lxi0707/Lxi0707/profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sxxsoo/sxxsoo/profile-3d-contrib/profile-night-rainbow.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/sxxsoo/sxxsoo/profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" />
 </picture>
